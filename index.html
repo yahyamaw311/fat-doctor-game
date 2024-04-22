@@ -5,6 +5,7 @@
   </head>
   <body>
     <script type="module">
+      
       // Create the application helper and add its render target to the page
       const app = new PIXI.Application();
       await app.init({ width: 640, height: 360 })
@@ -50,17 +51,6 @@
             tacos.x = 0
         }
       })
-    //   app.ticker.add((ticker) => {
-    //     elapsedtacos += ticker.deltaTime;
-    //     // sprite.y = 100.0 - Math.cos(elapsed/50.0) * 200.0;
-    //     tacos.x -= 5
-
-    //     if(tacos.y == 360){
-    //         tacos.x =  Math.random() * 640
-    //         tacos.y = -40
-    //     }
-        
-    //   });
 
     </script>
   </body>
