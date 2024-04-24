@@ -1,4 +1,4 @@
-import { addFood, animateApples } from "./script/script.js";
+import { addFood, animateApples } from "./script/addfood.js";
 import { addBackground } from "./script/addBackground.js";
 
 const Application = PIXI.Application;
@@ -8,7 +8,7 @@ const foods = [];
 
 async function setup()
 {
-    await app.init({ width: 960, height: 540 })
+    await app.init({ width: 1600, height: 900 })
 
     document.body.appendChild(app.canvas);
 }

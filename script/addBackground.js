@@ -11,10 +11,6 @@ export function addBackground(app){
 
     else
     {
-        /**
-         * If the preview is square or portrait, then fill the height of the screen instead
-         * and apply the scaling to the horizontal scale accordingly.
-         */
         background.height = app.screen.height * 1.2;
         background.scale.x = background.scale.y;
     }
