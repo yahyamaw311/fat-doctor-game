@@ -1,22 +1,23 @@
-import { addFood, animateApples } from "./script/script.js";
-import { Controller } from "./script/controller.js";
-import { SpineBoy } from "./script/character.js";
+import { addFood, animateApples } from "./script/addfood.js";
+import { addBackground } from "./script/addBackground.js";
 
 const Application = PIXI.Application;
 const app = new Application();
 
 const foods = [];
 
-async function setup() {
-    await app.init({ width: 960, height: 540 })
+async function setup()
+{
+    await app.init({ width: 1600, height: 900 })
 
     document.body.appendChild(app.canvas);
 }
 
 async function preload() {
     const assets = [
-        { alias: 'puffs', src: 'img/puffs.png' },
-        { alias: 'apple', src: 'img/apple.png' },
+        {alias: 'background', src: 'img/background.png'},
+        {alias: 'puffs', src: 'img/puffs.png'},
+        {alias: 'apple', src: 'img/apple.png'},
     ]
 
     await PIXI.Assets.load(assets);
@@ -26,7 +27,7 @@ async function preload() {
     await setup();
     await preload();
 
-    const controller = new Controller();
+    addBackground(app)
     addFood(app, foods);
     const character = PIXI.Sprite.from("img/apple.png");
     const characterContainer = new PIXI.Container();
