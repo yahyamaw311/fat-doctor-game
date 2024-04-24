@@ -4,13 +4,14 @@ export function addFood(app, apples)
 
     app.stage.addChild(appleContainer);
 
-    const appleCount = 1;
+    const appleCount = 10;
 
     const foodAssets = ['apple', 'puffs']
 
     for (let i = 0; i < appleCount; i++)
     {
-        const foodAsset = foodAssets[ i % 2]
+        //const randomFood = Math.floor(Math.random() * 2)
+        const foodAsset = foodAssets[i % foodAssets.length]
 
         const food = PIXI.Sprite.from(foodAsset);
 
