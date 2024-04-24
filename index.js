@@ -1,8 +1,10 @@
 import { addFood, animateApples } from "./script/addfood.js";
 import { addBackground } from "./script/addBackground.js";
+import { Controller } from "./script/controller.js";
 
 const Application = PIXI.Application;
 const app = new Application();
+const controller = new Controller();
 
 const foods = [];
 
@@ -35,7 +37,7 @@ async function preload() {
     app.stage.addChild(characterContainer);
     characterContainer.addChild(character);
     character.x = 50;
-    character.y = 500;
+    character.y = 850;
 
     app.ticker.add((time) => {
         animateApples(app, foods, time);
