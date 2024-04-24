@@ -1,29 +1,32 @@
-export function addApple(app, apples)
+export function addFood(app, apples)
 {
     const appleContainer = new PIXI.Container();
 
     app.stage.addChild(appleContainer);
 
-    const appleCount = 5;
+    const appleCount = 1;
+
+    const foodAssets = ['apple', 'puffs']
 
     for (let i = 0; i < appleCount; i++)
     {
-        const apple = PIXI.Sprite.from("img/apple.png");
+        const foodAsset = foodAssets[ i % 2]
 
-        apple.anchor.set(0.5);
+        const food = PIXI.Sprite.from(foodAsset);
 
-        apple.direction = Math.random() * Math.PI * 2;
-        apple.speed = 1 + Math.random() * 1;
-        apple.turnSpeed = Math.random() - 0.8;
+        food.anchor.set(0.5);
 
-        apple.x = Math.random() * app.screen.width;
-        apple.y = Math.random() * app.screen.height;
+        food.direction = Math.random() * Math.PI * 2;
+        food.speed = 1 + Math.random() * 1;
+        food.turnSpeed = Math.random() - 0.8;
 
-        apple.scale.set(0.5 + Math.random() * 0.2);
+        food.x = Math.random() * app.screen.width;
 
-        appleContainer.addChild(apple);
+        food.scale.set(0.5 + Math.random() * 0.2);
 
-        apples.push(apple);
+        appleContainer.addChild(food);
+
+        apples.push(food);
     }
 }
 
@@ -37,25 +40,20 @@ export function animateApples(app, apples, time)
 
     apples.forEach((apple) =>
     {
-        apple.y += 5 * apple.speed;
-        apple.rotation += 0.25;
+        apple.y += 2 * apple.speed;
+        apple.rotation += 0.06;
 
-        if (apple.x < -stagePadding)
-        {
-            apple.x += boundWidth;
-        }
-        if (apple.x > app.screen.width + stagePadding)
-        {
-            apple.x -= boundWidth;
-        }
         if (apple.y < -stagePadding)
         {
             apple.y += boundHeight;
+            apple.x = Math.random() * app.screen.width;
         }
         if (apple.y > app.screen.height + stagePadding)
         {
             apple.y -= boundHeight;
+            apple.x = Math.random() * app.screen.width;
         }
-
     });
 }
+
+
