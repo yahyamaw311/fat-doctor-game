@@ -1,4 +1,4 @@
-export function addApple(app, apples)
+export function addFood(app, apples)
 {
     const appleContainer = new PIXI.Container();
 
@@ -20,9 +20,9 @@ export function addApple(app, apples)
 
         apple.scale.set(0.5 + Math.random() * 0.2);
 
-        appleContainer.addChild(apple);
+        appleContainer.addChild(food);
 
-        apples.push(apple);
+        apples.push(food);
     }
 }
 
@@ -60,10 +60,14 @@ export function animateApples(app, apples, time)
         if (apple.y < -stagePadding)
         {
             apple.y += boundHeight;
+            apple.x = Math.random() * app.screen.width;
         }
         if (apple.y > app.screen.height + stagePadding)
         {
             apple.y -= boundHeight;
+            apple.x = Math.random() * app.screen.width;
         }
     });
 }
+
+

@@ -1,9 +1,9 @@
-import { addApple, animateApples } from "./script/script.js";
+import { addFood, animateApples } from "./script/script.js";
 
 const Application = PIXI.Application;
 const app = new Application();
 
-const apples = [];
+const foods = [];
 
 async function setup()
 {
@@ -14,7 +14,12 @@ async function setup()
 
 async function preload()
 {
-    await PIXI.Assets.load("img/apple.png");
+    const assets = [
+        {alias: 'puffs', src: 'img/puffs.png'},
+        {alias: 'apple', src: 'img/apple.png'},
+    ]
+    
+    await PIXI.Assets.load(assets);
 }
 
 (async () =>
@@ -22,7 +27,7 @@ async function preload()
     await setup();
     await preload();
 
-    addApple(app, apples);
+    addFood(app, foods);
 
-    app.ticker.add((time) => animateApples(app, apples, time));
+    app.ticker.add((time) => animateApples(app, foods, time));
 })();
