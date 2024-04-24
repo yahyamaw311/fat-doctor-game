@@ -1,67 +1,12 @@
-<!doctype html>
-<html>
-  <head>
-    <script src="https://pixijs.download/release/pixi.min.js"></script>
-  </head>
-  <body>
-    <script type="module">
-      // Create the application helper and add its render target to the page
-      const app = new PIXI.Application();
-      await app.init({ width: 640, height: 360 })
-      document.body.appendChild(app.canvas);
-
-      // Create the sprite and add it to the stage
-      await PIXI.Assets.load('apple.png');
-      let apple = PIXI.Sprite.from('apple.png');
-      app.stage.addChild(apple);
-      
-      await PIXI.Assets.load('tacos.png');
-      let tacos = PIXI.Sprite.from('tacos.png');
-      app.stage.addChild(tacos);
-
-      // Add a ticker callback to move the sprite back and forth
-      let elapsed = 0.0;
-      apple.y = -40
-      apple.x = Math.random() * 640
-      app.ticker.add((ticker) => {
-        elapsed += ticker.deltaTime;
-        // sprite.y = 100.0 - Math.cos(elapsed/50.0) * 200.0;
-        apple.y += 5
-
-        if(apple.y == 360){
-            apple.x =  Math.random() * 640
-            apple.y = -40
-        }
-        
-      });
-
-      let elapsedtacos = 0.0;
-      tacos.y = 330
-      tacos.x = 320
-      app.ticker.add((ticker) => {
-        elapsedtacos += ticker.deltaTime;
-        tacos.x += 5
-        // si le tacos x est plus grand que 
-
-        if((apple.x > tacos.x - 10 && apple.x < tacos.x + 10) && (apple.y > tacos.y - 10 && apple.y < tacos.y + 10) ){
-            console.log("touché: x: " + tacos.x + " y: " + tacos.y)
-        }
-        if(tacos.x == 640){
-            tacos.x = 0
-        }
-      })
-    //   app.ticker.add((ticker) => {
-    //     elapsedtacos += ticker.deltaTime;
-    //     // sprite.y = 100.0 - Math.cos(elapsed/50.0) * 200.0;
-    //     tacos.x -= 5
-
-    //     if(tacos.y == 360){
-    //         tacos.x =  Math.random() * 640
-    //         tacos.y = -40
-    //     }
-        
-    //   });
-
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <script src="./node_modules/pixi.js/dist/pixi.min.js"></script>
+</body>
 </html>
