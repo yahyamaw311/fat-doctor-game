@@ -1,21 +1,19 @@
-import { Container, Sprite } from 'pixi.js';
-
 export function addApple(app, apples)
 {
-    const appleContainer = new Container();
+    const appleContainer = new PIXI.Container();
 
     app.stage.addChild(appleContainer);
 
-    const appleCount = 10;
+    const appleCount = 5;
 
     for (let i = 0; i < appleCount; i++)
     {
-        const apple = Sprite.from("apple.png");
+        const apple = PIXI.Sprite.from("img/apple.png");
 
         apple.anchor.set(0.5);
 
         apple.direction = Math.random() * Math.PI * 2;
-        apple.speed = 2 + Math.random() * 2;
+        apple.speed = 1 + Math.random() * 1;
         apple.turnSpeed = Math.random() - 0.8;
 
         apple.x = Math.random() * app.screen.width;
@@ -39,12 +37,8 @@ export function animateApples(app, apples, time)
 
     apples.forEach((apple) =>
     {
-        apple.direction += apple.turnSpeed * 0.01;
-
-        apple.x += Math.sin(apple.direction) * apple.speed;
-        apple.y += Math.cos(apple.direction) * apple.speed;
-
-        apple.rotation = -apple.direction - Math.PI / 2;
+        apple.y += 5 * apple.speed;
+        apple.rotation += 0.25;
 
         if (apple.x < -stagePadding)
         {
@@ -62,5 +56,6 @@ export function animateApples(app, apples, time)
         {
             apple.y -= boundHeight;
         }
+
     });
 }
