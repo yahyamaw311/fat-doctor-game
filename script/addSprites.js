@@ -3,7 +3,7 @@ export function addFood(app, apples)
     const appleContainer = new PIXI.Container();
     app.stage.addChild(appleContainer);
 
-    const appleCount = 10;
+    const appleCount = 20;
 
     const foodAssets = ['apple', 'puffs']
 
@@ -16,7 +16,6 @@ export function addFood(app, apples)
 
         food.anchor.set(0.5);
 
-        food.direction = Math.random() * Math.PI * 2;
         food.speed = 1 + Math.random() * 2;
         food.turnSpeed = Math.random() - 0.8;
 
@@ -27,6 +26,24 @@ export function addFood(app, apples)
         appleContainer.addChild(food);
 
         apples.push(food);
+    }
+}
+
+export function addCharacters(app, characters){
+    const characterContainer = new PIXI.Container();
+    app.stage.addChild(characterContainer)
+    const characterCount = 2;
+    const characterAssets = ['jordyn']
+    for(let i = 0; i < characterCount; i++){
+        const characterAsset = characterAssets[0];
+        const character = PIXI.Sprite.from(characterAsset);
+        
+        
+        characterAsset.y = 700;
+        character.x = 100;
+        characterContainer.addChild(character)
+
+        characters.push(character)
     }
 }
 
