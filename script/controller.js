@@ -1,13 +1,9 @@
 // Map keyboard key codes to controller's state keys
 const keyMap = {
-    Space: 'space',
-    KeyW: 'up',
-    ArrowUp: 'up',
-    KeyA: 'left',
+    KeyA: 'left2',
     ArrowLeft: 'left',
-    KeyS: 'down',
-    ArrowDown: 'down',
-    KeyD: 'right',
+
+    KeyD: 'right2',
     ArrowRight: 'right',
 };
 
@@ -18,11 +14,12 @@ export class Controller
     {
         // The controller's state.
         this.keys = {
-            up: { pressed: false, doubleTap: false, timestamp: 0 },
             left: { pressed: false, doubleTap: false, timestamp: 0 },
-            down: { pressed: false, doubleTap: false, timestamp: 0 },
             right: { pressed: false, doubleTap: false, timestamp: 0 },
-            space: { pressed: false, doubleTap: false, timestamp: 0 },
+
+            left2: { pressed: false, doubleTap: false, timestamp: 0 },
+            right2: { pressed: false, doubleTap: false, timestamp: 0 },
+            
         };
 
         // Register event listeners for keydown and keyup events.

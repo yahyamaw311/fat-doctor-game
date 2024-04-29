@@ -37,21 +37,14 @@ async function preload() {
     addBackground(app)
     addCharacters(app, characters)
     addFood(app, foods);
-    //const character = PIXI.Sprite.from("img/jordyn.png");
-    //const characterContainer = new PIXI.Container();
-//
-    //app.stage.addChild(characterContainer);
-    //characterContainer.addChild(character);
-    //character.x = 50;
-    //character.y = 625;
-//
+    
     app.ticker.add((time) => {
         animateApples(app, foods, time);
         if (controller.keys.left.pressed && characters[0].x > 0) characters[0].x -= 10;
         else if (controller.keys.right.pressed && characters[0].x < (appWidth - 50)) characters[0].x += 10;
     
         
-        if (controller.keys.up.pressed && characters[1].x > 0) characters[1].x += 10;
-        else if (controller.keys.down.pressed && characters[1].x < (appWidth - 50)) characters[1].x -= 10;
+        if (controller.keys.left2.pressed && characters[1].x > 0) characters[1].x -= 10;
+        else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 10;
     });
 })();
