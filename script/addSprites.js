@@ -37,14 +37,14 @@ export function addCharacters(app, characters){
     for(let i = 0; i < characterCount; i++){
         const characterAsset = characterAssets[0];
         const character = PIXI.Sprite.from(characterAsset);
-        
-        
-        characterAsset.y = 700;
-        character.x = 100;
-        characterContainer.addChild(character)
 
-        characters.push(character)
+        character.y = 600;
+        character.x = Math.random() * app.screen.width;
+        characterContainer.addChild(character);
+
+        characters.push(character);
     }
+    return characters;
 }
 
 export function animateApples(app, apples, time)
