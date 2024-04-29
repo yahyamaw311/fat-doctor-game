@@ -24,7 +24,8 @@ async function preload() {
         {alias: 'background', src: 'img/background.png'},
         {alias: 'puffs', src: 'img/puffs.png'},
         {alias: 'apple', src: 'img/apple.png'},
-        {alias: 'jordyn', src:'img/jordyn.png'}
+        {alias: 'jordyn', src:'img/jordyn.png'},
+        {alias: 'wizard', src:'img/wizard.png'}
     ]
 
     await PIXI.Assets.load(assets);

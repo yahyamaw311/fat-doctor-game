@@ -33,9 +33,9 @@ export function addCharacters(app, characters){
     const characterContainer = new PIXI.Container();
     app.stage.addChild(characterContainer)
     const characterCount = 2;
-    const characterAssets = ['jordyn']
+    const characterAssets = ['jordyn', 'wizard']
     for(let i = 0; i < characterCount; i++){
-        const characterAsset = characterAssets[0];
+        const characterAsset = characterAssets[i % characterAssets.length];
         const character = PIXI.Sprite.from(characterAsset);
 
         character.y = 600;
