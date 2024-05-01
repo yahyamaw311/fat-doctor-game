@@ -1,4 +1,4 @@
-import { addFood, animateApples, addCharacters } from "./script/addSprites.js";
+import { addFood, animateApples, addCharacters, addScores } from "./script/addSprites.js";
 import { addBackground } from "./script/addBackground.js";
 import { Controller } from "./script/controller.js";
 
@@ -29,6 +29,10 @@ async function preload() {
     ]
 
     await PIXI.Assets.load(assets);
+
+    // Create a new Text object
+    
+    
 }
 
 (async () => {
@@ -38,6 +42,8 @@ async function preload() {
     addBackground(app)
     addCharacters(app, characters)
     addFood(app, foods);
+    addScores(app, 0, 1)
+    
     
     app.ticker.add((time) => {
         animateApples(app, foods, time);
