@@ -29,6 +29,33 @@ export function addFood(app, apples)
     }
 }
 
+export function addScores(app, doctorScore, patientScore){
+    const doctorScoreMessage = new PIXI.Text('', { fontFamily: 'Arial', fontSize: 25, fill: 'green'});
+    doctorScoreMessage.text = 'player 1 = ' + doctorScore; 
+    doctorScoreMessage.anchor.set(0.5);
+    doctorScoreMessage.x = 75;
+    doctorScoreMessage.y = 30;
+//
+    const patientScoreMessage = new PIXI.Text('', { fontFamily: 'Arial', fontSize: 25, fill: 'blue'});
+    patientScoreMessage.text = 'player 2 = ' + patientScore; 
+    patientScoreMessage.anchor.set(0.5);
+    patientScoreMessage.x = 1500;
+    patientScoreMessage.y = 30;
+    
+    app.stage.addChild(doctorScoreMessage);
+    app.stage.addChild(patientScoreMessage);
+
+    //const listmess = [doctorScore, patientScore];
+    //for(i = 0; i < listmess.length; i++){
+    //    const scoreMessage = new PIXI.Text('', { fontFamily: 'Arial', fontSize: 25, fill: 'blue'});
+    //    scoreMessage.text = 'player = ' + listmess[i]
+    //    scoreMessage.anchor.set(0.5);
+    //    scoreMessage.x = 1500;
+    //    scoreMessage.y = 30;
+    //    app.stage.addChild(scoreMessage);
+    //}
+}
+
 export function addCharacters(app, characters){
     const characterContainer = new PIXI.Container();
     app.stage.addChild(characterContainer)

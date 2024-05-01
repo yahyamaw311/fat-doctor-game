@@ -1,4 +1,4 @@
-import { addFood, animateApples, addCharacters } from "./script/addSprites.js";
+import { addFood, animateApples, addCharacters, addScores } from "./script/addSprites.js";
 import { addBackground } from "./script/addBackground.js";
 import { Controller } from "./script/controller.js";
 import detectCollision from "./script/detectCollision.js";
@@ -29,6 +29,10 @@ async function preload() {
     ]
 
     await PIXI.Assets.load(assets);
+
+    // Create a new Text object
+    
+    
 }
 
 (async () => {
@@ -38,9 +42,7 @@ async function preload() {
     addBackground(app)
     addCharacters(app, characters)
     addFood(app, foods);
-
-    let doctorPoints = 0;
-    let fatPoints = 0;
+    
     app.ticker.add((time) => {
         animateApples(app, foods, time);
         if (controller.keys.left.pressed && characters[0].x > 0) characters[0].x -= 10;
