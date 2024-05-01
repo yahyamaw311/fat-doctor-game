@@ -54,12 +54,12 @@ async function preload() {
 
         if (controller.keys.left2.pressed && characters[1].x > 0) characters[1].x -= 10;
         else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 10;
-        //var winner = detectCollision(foods, characters, app)
         if (detectCollision(foods, characters, app) == 0) {
             fatPoints++;
             console.log(fatPoints);
-        } else {
+        } if (detectCollision(foods, characters, app) == 1) {
             doctorPoints++;
+            console.log(doctorPoints);
         }
     });
 })();
