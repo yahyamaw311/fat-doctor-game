@@ -3,7 +3,7 @@ export function addFood(app, apples)
     const appleContainer = new PIXI.Container();
     app.stage.addChild(appleContainer);
 
-    const appleCount = 20;
+    const appleCount = 2;
 
     const foodAssets = ['apple', 'puffs']
 
@@ -62,10 +62,13 @@ export function animateApples(app, apples, time)
         if (apple.y < -stagePadding)
         {
             apple.y += boundHeight;
+            apple.x = Math.random() * app.screen.width;
         }
         if (apple.y > app.screen.height + stagePadding)
         {
             apple.y -= boundHeight;
+            apple.x = Math.random() * app.screen.width;
         }
+
     });
 }
