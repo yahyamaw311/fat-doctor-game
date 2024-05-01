@@ -39,9 +39,12 @@ async function preload() {
     await setup();
     await preload();
 
-    addBackground(app)
-    addCharacters(app, characters)
+    addBackground(app);
+    addCharacters(app, characters);
     addFood(app, foods);
+
+    let doctorPoints = 0;
+    let fatPoints = 0;
     
     app.ticker.add((time) => {
         animateApples(app, foods, time);
@@ -53,10 +56,10 @@ async function preload() {
         else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 10;
         //var winner = detectCollision(foods, characters, app)
         if (detectCollision(foods, characters, app) == 0) {
-            doctorPoints++;
-            console.log(doctorPoints);
+            fatPoints++;
+            console.log(fatPoints);
         } else {
-           fatPoints++;
+            doctorPoints++;
         }
     });
 })();

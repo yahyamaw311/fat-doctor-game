@@ -18,8 +18,6 @@ export default function detectCollision(foods, characters, app) {
                 break;
             }
         }
-
-        
     });
     return winner;
 }
