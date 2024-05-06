@@ -1,4 +1,4 @@
-export default function detectCollision(foods, characters, app) {
+export default function detectCollision(foods, characters, app, messagesTest) {
     var winner;
     foods.forEach(food => {
         var foodxBound1 = Math.round(food.x - food.width / 2);
@@ -14,7 +14,13 @@ export default function detectCollision(foods, characters, app) {
             if (characterxBound1 <= foodxBound2 && characterxBound2 >= foodxBound1 && foodyBound2 >= characteryBound1 && foodyBound1 <= characteryBound2) {
                 food.y = app.screen.height;
                 food.x = Math.random() * app.screen.width;
-                winner = characters.indexOf(character);
+                if (character.name == "wizard" && food.name == "puffs") {
+                    
+                    winner = "wizard";
+                } else if (character.name == "jordyn" && food.name == "apple") {
+                    messagesTest[0].text = " testies won"
+                    winner = "jordyn";
+                }
                 break;
             }
         }

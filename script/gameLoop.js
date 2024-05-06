@@ -1,6 +1,5 @@
 import { addFood, animateApples, addCharacters } from "./script/addSprites.js";
 import { addBackground } from "./script/addBackground.js";
-import { Controller } from "./script/controller.js";
 
 export async function gameLoop(app, foods, characters){
     addBackground(app)

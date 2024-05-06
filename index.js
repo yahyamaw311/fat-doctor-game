@@ -9,13 +9,14 @@ const controller = new Controller();
 
 const foods = [];
 const characters = [];
+const messagesTest = [];
 
-let appWidth = 1600
+let appWidth = 1650
 let appHeight = 900
 
 async function setup() {
     await app.init({ width: appWidth, height: appHeight });
-
+    document.body.style.overflowX = "hidden";
     document.body.appendChild(app.canvas);
 }
 
@@ -31,8 +32,8 @@ async function preload() {
     await PIXI.Assets.load(assets);
 
     // Create a new Text object
-    
-    
+
+
 }
 
 (async () => {
@@ -43,9 +44,11 @@ async function preload() {
     addCharacters(app, characters);
     addFood(app, foods);
 
+    addScores(app, messagesTest)
+
     let doctorPoints = 0;
     let fatPoints = 0;
-    
+
     app.ticker.add((time) => {
         animateApples(app, foods, time);
         if (controller.keys.left.pressed && characters[0].x > 0) characters[0].x -= 10;
@@ -54,11 +57,19 @@ async function preload() {
 
         if (controller.keys.left2.pressed && characters[1].x > 0) characters[1].x -= 10;
         else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 10;
-        if (detectCollision(foods, characters, app) == 0) {
+        
+        var winnerTesties = detectCollision(foods, characters, app, messagesTest)
+        if (winnerTesties == "jordyn") {
             fatPoints++;
+            doctorPoints--;
+            messagesTest[0].text = "jordyn points = " + fatPoints
+            messagesTest[1].text = " wizard points = " + doctorPoints
             console.log(fatPoints);
-        } if (detectCollision(foods, characters, app) == 1) {
+        } else if (winnerTesties == "wizard") {
             doctorPoints++;
+            fatPoints--;
+            messagesTest[0].text = "jordyn points = " + fatPoints
+            messagesTest[1].text = " wizard points = " + doctorPoints
             console.log(doctorPoints);
         }
     });
