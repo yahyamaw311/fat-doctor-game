@@ -19,9 +19,10 @@ export default function detectCollision(foods, characters, app, messagesTest) {
                     winner = "wizard";
                 } else if (character.name == "jordyn" && food.name == "apple") {
                     winner = "jordyn";
-                } else if (character.name == "wizard" && food.name == "apple") {
+                } 
+                else if (character.name == "wizard" && food.name == "apple") {
                     winner = "wizard loses";
-                } else if (character.name = "jordyn" && food.name == "puffs") {
+                } else if (character.name == "jordyn" && food.name == "puffs") {
                     winner = "jordyn loses"
                 }
                 break;

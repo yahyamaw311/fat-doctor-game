@@ -57,20 +57,25 @@ async function preload() {
 
         if (controller.keys.left2.pressed && characters[1].x > 0) characters[1].x -= 10;
         else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 10;
-        
-        var winnerTesties = detectCollision(foods, characters, app, messagesTest)
+
+        var collisionedPlayer = detectCollision(foods, characters, app, messagesTest)
         // if (winnerTesties != undefined) {
         //     console.log(winnerTesties)
         // }
-        if (winnerTesties == "jordyn") {
+        if (collisionedPlayer == "jordyn") {
             fatPoints++;
-            doctorPoints--;
-        } else if (winnerTesties == "wizard") {
+            if (doctorPoints > 0) {
+                doctorPoints--;
+            }
+        } else if (collisionedPlayer == "wizard") {
             doctorPoints++;
-            fatPoints--;
-        } else if (winnerTesties == "wizard loses") {
+
+            if (fatPoints > 0) {
+                fatPoints--;
+            }
+        } else if (collisionedPlayer == "wizard loses" && doctorPoints > 0) {
             doctorPoints--;
-        } else if (winnerTesties == "jordyn loses") {
+        } else if (collisionedPlayer == "jordyn loses" && fatPoints > 0) {
             fatPoints--;
         }
 
