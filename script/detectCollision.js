@@ -15,11 +15,13 @@ export default function detectCollision(foods, characters, app, messagesTest) {
                 food.y = app.screen.height;
                 food.x = Math.random() * app.screen.width;
                 if (character.name == "wizard" && food.name == "puffs") {
-                    
                     winner = "wizard";
                 } else if (character.name == "jordyn" && food.name == "apple") {
-                    messagesTest[0].text = " testies won"
                     winner = "jordyn";
+                } else if (character.name == "wizard" && food.name == "apple") {
+                    winner = "wizard loses";
+                } else if (character.name = "jordyn" && food.name == "puffs") {
+                    winner = "jordyn loses"
                 }
                 break;
             }
