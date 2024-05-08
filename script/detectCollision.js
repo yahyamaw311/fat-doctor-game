@@ -14,6 +14,7 @@ export default function detectCollision(foods, characters, app, messagesTest) {
             if (characterxBound1 <= foodxBound2 && characterxBound2 >= foodxBound1 && foodyBound2 >= characteryBound1 && foodyBound1 <= characteryBound2) {
                 food.y = app.screen.height;
                 food.x = Math.random() * app.screen.width;
+                console.log(character.name);
                 if (character.name == "wizard" && food.name == "puffs") {
                     winner = "wizard";
                 } else if (character.name == "jordyn" && food.name == "apple") {
