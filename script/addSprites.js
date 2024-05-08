@@ -37,7 +37,7 @@ export function addScores(app, messageTest){
     const doctorScoreMessage = new PIXI.Text('', { fontFamily: 'Arial', fontSize: 25, fill: 'green'});
     doctorScoreMessage.text = 'player 1 = ' + 0; 
     doctorScoreMessage.anchor.set(0.5);
-    doctorScoreMessage.x = 75;
+    doctorScoreMessage.x = 125;
     doctorScoreMessage.y = 30;
 //
     const patientScoreMessage = new PIXI.Text('', { fontFamily: 'Arial', fontSize: 25, fill: 'blue'});
@@ -67,7 +67,7 @@ export function addCharacters(app, characters){
         const character = PIXI.Sprite.from(characterAsset);
         if (characterAsset.match("jordyn")) {
             character.name = "jordyn";
-        } else {
+        } else if (characterAsset.match("wizard")) {
             character.name = "wizard";
         }
 
