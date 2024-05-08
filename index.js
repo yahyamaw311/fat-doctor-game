@@ -62,8 +62,10 @@ async function preload() {
 
         if (winnerTesties == "jordyn") {
             fatPoints++;
-            doctorPoints--;
-        } else if (winnerTesties == "wizard") {
+            if (doctorPoints > 0) {
+                doctorPoints--;
+            }
+        } else if (collisionedPlayer == "wizard") {
             doctorPoints++;
             fatPoints--;
         } else if (winnerTesties == "wizardLoses" && doctorPoints > 0) {
