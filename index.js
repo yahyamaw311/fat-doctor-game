@@ -3,6 +3,11 @@ import { addBackground } from "./script/addBackground.js";
 import { Controller } from "./script/controller.js";
 import detectCollision from "./script/detectCollision.js";
 
+const castDebugLogger = cast.debug.CastDebugLogger.getInstance();
+const context = cast.framework.CastReceiverContext.getInstance();
+const CHANNEL = 'urn:x-cast:testChannel';
+const CHANNEL2 = 'urn:x-cast:gameChannel';
+
 const Application = PIXI.Application;
 const app = new Application();
 const controller = new Controller();
@@ -11,18 +16,26 @@ const foods = [];
 const characters = [];
 const messagesTest = [];
 
-let appWidth = 1650
-let appHeight = 900
+let appWidth = window.innerWidth
+let appHeight = window.innerHeight
 
 async function setup() {
     await app.init({ width: appWidth, height: appHeight });
     document.body.style.overflowX = "hidden";
     document.body.appendChild(app.canvas);
+
+    const options = new cast.framework.CastReceiverOptions();
+
+    options.customNamespaces = Object.assign({});
+    options.customNamespaces[CHANNEL2] = cast.framework.system.MessageType.JSON;
+    options.disableIdleTimeout = true;
+
+context.start(options);
 }
 
 async function preload() {
     const assets = [
-        { alias: 'background', src: 'img/background.png' },
+        { alias: 'background', src: 'img/background2.jpg' },
         { alias: 'puffs', src: 'img/puffs.png' },
         { alias: 'apple', src: 'img/apple.png' },
         { alias: 'jordyn', src: 'img/jordyn.png' },
