@@ -3,10 +3,6 @@ import { addBackground } from "./script/addBackground.js";
 import { Controller } from "./script/controller.js";
 import detectCollision from "./script/detectCollision.js";
 
-const castDebugLogger = cast.debug.CastDebugLogger.getInstance();
-const context = cast.framework.CastReceiverContext.getInstance();
-const CHANNEL = 'urn:x-cast:testChannel';
-const CHANNEL2 = 'urn:x-cast:gameChannel';
 
 const Application = PIXI.Application;
 const app = new Application();
@@ -23,14 +19,6 @@ async function setup() {
     await app.init({ width: appWidth, height: appHeight });
     document.body.style.overflowX = "hidden";
     document.body.appendChild(app.canvas);
-
-    const options = new cast.framework.CastReceiverOptions();
-
-    options.customNamespaces = Object.assign({});
-    options.customNamespaces[CHANNEL2] = cast.framework.system.MessageType.JSON;
-    options.disableIdleTimeout = true;
-
-context.start(options);
 }
 
 async function preload() {
