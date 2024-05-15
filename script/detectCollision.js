@@ -7,7 +7,6 @@ export default function detectCollision(foods, characters, app, messagesTest) {
         var foodyBound2 = Math.round(food.y + food.width / 2);
 
         for (let character of characters) {
-            console.log(character.width)
             var characterxBound1 = Math.round(character.x);
             var characterxBound2 = Math.round(character.x + character.width - 7);
             var characteryBound1 = Math.round(character.y - character.height / 10);
