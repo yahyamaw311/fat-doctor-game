@@ -58,9 +58,9 @@ async function preload() {
         if (controller.keys.left2.pressed && characters[1].x > 0) characters[1].x -= 10;
         else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 10;
         
-        var winnerTesties = detectCollision(foods, characters, app, messagesTest)
+        var collisionedPlayer = detectCollision(foods, characters, app, messagesTest)
 
-        if (winnerTesties == "jordyn") {
+        if (collisionedPlayer == "jordyn") {
             fatPoints++;
             if (doctorPoints > 0) {
                 doctorPoints--;
@@ -68,9 +68,9 @@ async function preload() {
         } else if (collisionedPlayer == "wizard") {
             doctorPoints++;
             fatPoints--;
-        } else if (winnerTesties == "wizardLoses" && doctorPoints > 0) {
+        } else if (collisionedPlayer == "wizardLoses" && doctorPoints > 0) {
             doctorPoints--;
-        } else if (winnerTesties == "jordynLoses" && fatPoints > 0) {
+        } else if (collisionedPlayer == "jordynLoses" && fatPoints > 0) {
             fatPoints--;
         }
         messagesTest[0].text = "jordyn points = " + fatPoints
