@@ -3,6 +3,7 @@ import { addBackground } from "./script/addBackground.js";
 import { Controller } from "./script/controller.js";
 import detectCollision from "./script/detectCollision.js";
 
+
 const Application = PIXI.Application;
 const app = new Application();
 const controller = new Controller();
@@ -11,8 +12,8 @@ const foods = [];
 const characters = [];
 const messagesTest = [];
 
-let appWidth = 1650
-let appHeight = 900
+let appWidth = window.innerWidth
+let appHeight = window.innerHeight
 
 async function setup() {
     await app.init({ width: appWidth, height: appHeight });
@@ -22,7 +23,7 @@ async function setup() {
 
 async function preload() {
     const assets = [
-        { alias: 'background', src: 'img/background.png' },
+        { alias: 'background', src: 'img/background2.jpg' },
         { alias: 'puffs', src: 'img/puffs.png' },
         { alias: 'apple', src: 'img/apple.png' },
         { alias: 'jordyn', src: 'img/jordyn.png' },
@@ -58,19 +59,19 @@ async function preload() {
         if (controller.keys.left2.pressed && characters[1].x > 0) characters[1].x -= 10;
         else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 10;
         
-        var collisionedPlayer = detectCollision(foods, characters, app, messagesTest)
+        var winner = detectCollision(foods, characters, app, messagesTest)
 
-        if (collisionedPlayer == "jordyn") {
+        if (winner == "jordyn") {
             fatPoints++;
             if (doctorPoints > 0) {
                 doctorPoints--;
             }
-        } else if (collisionedPlayer == "wizard") {
+        } else if (winner == "wizard") {
             doctorPoints++;
             fatPoints--;
-        } else if (collisionedPlayer == "wizardLoses" && doctorPoints > 0) {
+        } else if (winner == "wizardLoses" && doctorPoints > 0) {
             doctorPoints--;
-        } else if (collisionedPlayer == "jordynLoses" && fatPoints > 0) {
+        } else if (winner == "jordynLoses" && fatPoints > 0) {
             fatPoints--;
         }
         messagesTest[0].text = "jordyn points = " + fatPoints
