@@ -21,7 +21,7 @@ export function addFood(app, apples)
 
         food.anchor.set(0.5);
 
-        food.speed = 1 + Math.random() * 2;
+        food.speed = 0.5 + Math.random() * 0.5
         food.turnSpeed = Math.random() - 0.8;
 
         food.x = Math.random() * app.screen.width;
@@ -37,14 +37,14 @@ export function addScores(app, messageTest){
     const doctorScoreMessage = new PIXI.Text('', { fontFamily: 'Arial', fontSize: 25, fill: 'green'});
     doctorScoreMessage.text = 'player 1 = ' + 0; 
     doctorScoreMessage.anchor.set(0.5);
-    doctorScoreMessage.x = 125;
-    doctorScoreMessage.y = 30;
+    doctorScoreMessage.x = 100;
+    doctorScoreMessage.y = 25;
 //
     const patientScoreMessage = new PIXI.Text('', { fontFamily: 'Arial', fontSize: 25, fill: 'blue'});
     patientScoreMessage.text = 'player 2 = ' + 0; 
     patientScoreMessage.anchor.set(0.5);
-    patientScoreMessage.x = 1500;
-    patientScoreMessage.y = 30;
+    patientScoreMessage.x = 875;
+    patientScoreMessage.y = 25;
     
     app.stage.addChild(doctorScoreMessage);
     app.stage.addChild(patientScoreMessage);
@@ -71,7 +71,7 @@ export function addCharacters(app, characters){
             character.name = "wizard";
         }
 
-        character.y = 600;
+        character.y = 310;
         character.x = Math.random() * app.screen.width;
         characterContainer.addChild(character);
 
