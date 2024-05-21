@@ -37,7 +37,7 @@ Si aucun des joueurs ne touche aux contrôles, les pommes et les chips vont cont
 ## Liste des contrôles
 <ins>Docteur</ins><br />
 "A" pour se déplacer horizontalement à gauche
-"D" pour se déplacer horizontalement à droite
+"D" pour se déplacer horizontalement à droite<br />
 <ins>Fat</ins><br />
 Flèche gauche sur le clavier pour se déplacer horizontalement à gauche
 Flèche droite sur le clavier pour se déplacer horizontalement à droite
