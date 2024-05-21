@@ -2,7 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f8f8f8;
     justify-content: center;
-    margin-top: 10%;
 }
 .menu {
     text-align: center;
@@ -11,7 +10,7 @@ body {
     padding: 50px 150px;
     background-color: #fff;
     width: fit-content;
-    margin: auto;
+    margin: 10% auto auto auto;
 }
 .title {
     font-size: 36px;
@@ -20,12 +19,29 @@ body {
 .button {
     padding: 10px 20px;
     margin-bottom: 10px;
-    display: block;
     background-color: #4CAF50;
     color: #fff;
+    display: block;
     border-radius: 5px;
     text-decoration: none;
 }
 .button:hover {
     background-color: #45a049;
+}
+
+.top-div {
+    margin-bottom: 50px;
+}
+
+.bottom-div {
+    margin: 20px 10px 30px 0;
+}
+
+.bottom-div a {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
 }

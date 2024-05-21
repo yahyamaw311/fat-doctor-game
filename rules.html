@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Rules</title>
 </head>
+
 <body>
-    <div class="languages">
-        <p>Langues disponibles: </p>
+    <div class="bottom-div">
         <div class="langChoices">
-            <a href="#" language='french' class="active">FR</a>
+            <a href="#" language='french' class="active ">FR</a>
             <a href="#" language='english'>EN</a>
             <a href="#" language='spanish'>ES</a>
         </div>
     </div>
-    
+
     <div>
-        <button id="retour"><a href="./index.html">retour</a></button>
+        <a href="/index.html" id="retour">retour</a>
         <p id="title">Doctor vs Patient</p>
+        <span style="display: none;">
+            <p id="jouer"></p>
+            <p id="regles"></p>
+        </span>
     </div>
 
     <h1 id="reglesDuJeu">Règles du jeu</h1>
@@ -25,42 +31,44 @@
     <div>
         <h2 id="contexte">1. Contexte</h2>
         <p id="contexteP">
-            C’est un jeu à deux joueurs, le docteur et le patient. Des pommes et des Cheetos tombent du ciel et vous devez les manger.
+            C’est un jeu à deux joueurs, le docteur et le patient. Des pommes et des Cheetos tombent du ciel et vous
+            devez les manger.
         </p>
     </div>
 
     <div>
-       <h2 id="elementsJeu">2. Éléments du jeu</h2>
-       <p id="elementsJeuP">
-            le jeu est composé de 2 éléments: les nourritures et les personnages. Les nourritures sont les pommes et les 
+        <h2 id="elementsJeu">2. Éléments du jeu</h2>
+        <p id="elementsJeuP">
+            le jeu est composé de 2 éléments: les nourritures et les personnages. Les nourritures sont les pommes et les
             Cheetos et les personnages sont le patient et le médecin.
-       </p>
+        </p>
 
-       <div>
-        <p id="patient">Patient</p>
-        <img src="./img/jordyn.png">
-       </div>
+        <div>
+            <p id="patient">Patient</p>
+            <img src="./img/jordyn.png">
+        </div>
 
-       <div>
-        <p id="docteur">Docteur</p>
-        <img src="./img/wizard.png">
-       </div>
+        <div>
+            <p id="docteur">Docteur</p>
+            <img src="./img/wizard.png">
+        </div>
 
-       <div>
-        <p id="pomme">Pomme</p>
-        <img src="./img/apple.png">
-       </div>
+        <div>
+            <p id="pomme">Pomme</p>
+            <img src="./img/apple.png">
+        </div>
 
-       <div>
-        <p id="cheetos">Cheetos</p>
-        <img src="./img/puffs.png">
-       </div>
+        <div>
+            <p id="cheetos">Cheetos</p>
+            <img src="./img/puffs.png">
+        </div>
     </div>
 
     <div>
         <h2 id="butJeu">3. But du jeu</h2>
 
-        <p id="butJeuP1">Au fur et à mesure que les aliments tombent du ciel, vous devez les attraper et les manger. Chaque joueur a un aliment spécifique qu’il doit manger.</p>
+        <p id="butJeuP1">Au fur et à mesure que les aliments tombent du ciel, vous devez les attraper et les manger.
+            Chaque joueur a un aliment spécifique qu’il doit manger.</p>
 
         <p id="butJeuP2">Le docteur doit manger les cheetos.</p>
         <p id="butJeuP3">Le patient doit manger les pommes.</p>
@@ -69,11 +77,13 @@
     <div>
         <h2 id="systemePoints">4. Système de points</h2>
 
-        <p id="systemePointsP1">Le système de points est assez simple. Lorsque vous mangez votre aliment respectif, vous gagnez un point et vous faites perdre un point à votre adversaire.</p>
+        <p id="systemePointsP1">Le système de points est assez simple. Lorsque vous mangez votre aliment respectif, vous
+            gagnez un point et vous faites perdre un point à votre adversaire.</p>
 
-        <p id="systemePointsP2">Si vous mangez un aliment que vous n’êtes pas censé manger, vous perdez un point; il est donc très important d’éviter la mauvaise nourriture.</p>
+        <p id="systemePointsP2">Si vous mangez un aliment que vous n’êtes pas censé manger, vous perdez un point; il est
+            donc très important d’éviter la mauvaise nourriture.</p>
     </div>
-    
+
     <div>
         <h2 id="mouvement">5. Mouvement</h2>
 
@@ -90,6 +100,7 @@
         <p id="commentGagnerP1">Le premier joueur à 10 points gagne la partie.</p>
     </div>
 
-    <script src="./translator.js"></script>
 </body>
+<script src="./translator.js"></script>
+
 </html>
