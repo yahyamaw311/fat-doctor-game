@@ -2,6 +2,10 @@
 const langChoices = document.querySelector(".langChoices")
 const languagelist = document.querySelectorAll('a')
 
+window.onload = () => {
+    translateWebsite("french")
+}
+
 languagelist.forEach(lang => {
     lang.addEventListener('click', () => {
 
@@ -13,14 +17,19 @@ languagelist.forEach(lang => {
         const languageChosen = lang.getAttribute('language')
 
         // replace every element of the page
-        for(var element in dictionnary[languageChosen]){
-            if(dictionnary[languageChosen].hasOwnProperty(element)){
-                document.getElementById(element).textContent = dictionnary[languageChosen][element]
-            }
-        }
-
+        translateWebsite(languageChosen)
     })
 })
+
+function translateWebsite(languageChosen){
+    for(var element in dictionnary[languageChosen]){
+        // cette partie fait pas de sens, si jitere dans le dictionnaire c sur quil est la
+        // il faut verifier que document.getEle.. != null
+        if(dictionnary[languageChosen].hasOwnProperty(element)){
+            document.getElementById(element).textContent = dictionnary[languageChosen][element]
+        }
+    }
+}
 
 
 // maybe add an extra layer for each page for example
