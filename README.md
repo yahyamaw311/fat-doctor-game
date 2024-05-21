@@ -35,10 +35,10 @@ Dans ce site, il est possible de:
 Si aucun des joueurs ne touche aux contrôles, les pommes et les chips vont continuer de tomber, mais seulement aléatoirement. Cela veut dire que l'accumulation des points vont aussi se faire aléatoirement. Si le docteur touche une pomme qui tombe, le nombre de points du docteur (score affiché en haut) baissera de 1. S'il touche un chips, son score montera de 1 et celui de son adversaire (fat) baissera de 1. Pour le fat, s'il touche un chips qui tombe, son score baissera de 1. S'il touche une pomme, son score montera de 1 et celui de son adversaire (fat) baissera de 1.
 
 ## Liste des contrôles
-<ins>Docteur</ins>
+<ins>Docteur</ins><br />
 "A" pour se déplacer horizontalement à gauche
 "D" pour se déplacer horizontalement à droite
-<ins>Docteur</ins>
+<ins>Fat</ins><br />
 Flèche gauche sur le clavier pour se déplacer horizontalement à gauche
 Flèche droite sur le clavier pour se déplacer horizontalement à droite
 
