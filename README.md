@@ -55,6 +55,8 @@ tout ces éléments ont étés pris du site officiel de PIXI JS dans la catégor
    - [Fish Bond](https://pixijs.com/8.x/tutorials/fish-pond#1)
 2. Le mouvement des joueurs
    - [SpineBoy Adventure](https://pixijs.com/8.x/tutorials/spine-boy-adventure)
+3. L'implémentation de i18n
+   - Youtube - VIP Tutorials [Change Language Web Page using JavaScript || JavaScript tutorials Change Language](https://www.youtube.com/watch?v=fWPOD3CAFM8)
 
 
 # Rapport d'essais
