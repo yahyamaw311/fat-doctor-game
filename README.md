@@ -28,14 +28,19 @@ Pour la création de ce jeu, nous avons créé un site web qui est relié a un s
 
 ## Actions possibles
 Dans ce site, il est possible de: 
-1. bouger les personnages de gauche à droite.
+1. bouger les personnages de gauche à droite avec les boutons "A" et "D" ainsi que la flèche gauche et droite.
 2. consuler le site des règles.
 
 ## États possibles
-???
+Si aucun des joueurs ne touche aux contrôles, les pommes et les chips vont continuer de tomber, mais seulement aléatoirement. Cela veut dire que l'accumulation des points vont aussi se faire aléatoirement. Si le docteur touche une pomme qui tombe, le nombre de points du docteur (score affiché en haut) baissera de 1. S'il touche un chips, son score montera de 1 et celui de son adversaire (fat) baissera de 1. Pour le fat, s'il touche un chips qui tombe, son score baissera de 1. S'il touche une pomme, son score montera de 1 et celui de son adversaire (fat) baissera de 1.
 
 ## Liste des contrôles
-???
+<ins>Docteur</ins>
+"A" pour se déplacer horizontalement à gauche
+"D" pour se déplacer horizontalement à droite
+<ins>Docteur</ins>
+Flèche gauche sur le clavier pour se déplacer horizontalement à gauche
+Flèche droite sur le clavier pour se déplacer horizontalement à droite
 
 ## Limitation des contrôles
 Tout les clients ont la même interface. Ce site est seulement disponible sur ordinateur.
