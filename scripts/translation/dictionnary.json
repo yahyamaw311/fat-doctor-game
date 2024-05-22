@@ -1,6 +1,9 @@
 {
     "french": {
         "title": "Docteur vs Patient",
+        "premierePartie": "c'est ta première partie ?",
+        "oui": "oui",
+        "non": "non",
         "jouer": "Jouer",
         "regles": "Règles",
         "retour": "retour",
@@ -30,6 +33,9 @@
 
     "english": {
         "title": "Doctor vs Patient",
+        "premierePartie": "is it your first match ?",
+        "oui": "yes",
+        "non": "no",
         "jouer": "Play",
         "regles": "Rules",
         "retour": "back",
@@ -59,6 +65,9 @@
 
     "spanish": {
         "title": "Doctor vs Paciente",
+        "premierePartie": "¿Es tu primer partido?",
+        "oui": "sí",
+        "non": "no",
         "jouer": "Jugar",
         "regles": "Reglas",
         "retour": "volver",
