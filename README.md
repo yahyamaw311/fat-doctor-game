@@ -38,9 +38,16 @@ Si aucun des joueurs ne touche aux contrôles, les pommes et les chips vont cont
 <ins>Docteur</ins><br />
 "A" pour se déplacer horizontalement à gauche
 "D" pour se déplacer horizontalement à droite<br />
+ou <br />
+Joystick de gauche sur la manette <br />
+
 <ins>Fat</ins><br />
 Flèche gauche sur le clavier pour se déplacer horizontalement à gauche
-Flèche droite sur le clavier pour se déplacer horizontalement à droite
+Flèche droite sur le clavier pour se déplacer horizontalement à droite<br />
+ou <br />
+Joystick de droite sur la manette <br />
+
+Si vous Jouez 
 
 ## Limitation des contrôles
 Tout les clients ont la même interface. Ce site est seulement disponible sur ordinateur.
@@ -59,13 +66,13 @@ tout ces éléments ont étés pris du site officiel de PIXI JS dans la catégor
 1. Génerer plusieurs sprites
    - [Fish Bond](https://pixijs.com/8.x/tutorials/fish-pond#1)
 2. Le mouvement des joueurs
-   - [SpineBoy Adventure](https://pixijs.com/8.x/tutorials/spine-boy-adventure)
-3. L'implémentation de i18n
+   - [SpineBoy Adventure](https://pixijs.com/8.x/tutorials/spine-boy-adventure)<br />
+Ces éléments ont étés pris de ces sources respectives
+1. L'implémentation de i18n
    - Youtube - VIP Tutorials [Change Language Web Page using JavaScript || JavaScript tutorials Change Language](https://www.youtube.com/watch?v=fWPOD3CAFM8)
-4. Implémentation de la manette
+2. Implémentation de la manette
    - Alvaro Montaro - [Playing with the Gamepad API](https://alvaromontoro.com/blog/68044/playing-with-the-gamepad-api)
    - Youtube - Coding With Adam [How to use JS Gamepad API and Build a Gamepad Tester in 12 minutes](https://www.youtube.com/watch?v=UXTOXF8Y2Cs)
 
 
-# Rapport d'essais
-## demander au prof c'est quoi
+# Test de 5 secondes
