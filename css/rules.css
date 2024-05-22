@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.block-div {
+    background-color: #fff;
+    width: 40%;
+    padding: 10px;
+    margin: auto auto 10px auto;
+    border-radius: 10px;
+    text-align: left;
+    border: 2px solid #4CAF50;
+}
+
+.return {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: solid #4CAF50;
+    color:#4CAF50;
+    width: fit-content;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: auto;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.sprites {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10%;
+}
+
+.div-sprites {
+    text-align: center;
+}
+
+.rules-div {
+    margin: 20px 10px 30px 0;
+}
+
+.rules-div a {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color:#fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #f8f8f8;
+}

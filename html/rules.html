@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/rules.css">
     <title>Rules</title>
 </head>
+
 <body>
-    <div class="languages">
-        <p>Langues disponibles: </p>
+    <div class="rules-div">
         <div class="langChoices">
             <a href="#" language='french' class="active">FR</a>
             <a href="#" language='english'>EN</a>
             <a href="#" language='spanish'>ES</a>
         </div>
     </div>
-    
-    <div>
-        <a id="retour" href="./index.html"></a>
-        <p id="title"></p>
-    </div>
 
+    <div class="return">
+        <a href="./index.html">
+            <i style="color: #4CAF50;" class="fa-solid fa-arrow-left-long"></i>
+        </a>
+    </div>
     <h1 id="reglesDuJeu"></h1>
 
-    <div>
+    <div class="block-div">
         <h2 id="contexte"></h2>
         <p id="contexteP">
-            
+
         </p>
     </div>
 
-    <div>
-       <h2 id="elementsJeu"></h2>
-       <p id="elementsJeuP">
-            
-       </p>
+    <div class="block-div">
+        <h2 id="elementsJeu"></h2>
+        <p id="elementsJeuP">
 
-       <div>
-        <p id="patient"></p>
-        <img src="../img/patient.png">
-       </div>
+        </p>
+        <div class="div-sprites">
+            <div class="sprites">
+                <img src="../img/patient.png">
+                <p id="patient"></p>
+            </div>
 
-       <div>
-        <p id="docteur"></p>
-        <img src="../img/doctor.png">
-       </div>
+            <div class="sprites">
+                <img src="../img/doctor.png">
+                <p id="docteur"></p>
+            </div>
 
-       <div>
-        <p id="pomme"></p>
-        <img src="../img/apple.png">
-       </div>
+            <div class="sprites">
+                <img src="../img/apple.png">
+                <p id="pomme"></p>
+            </div>
 
-       <div>
-        <p id="cheetos"></p>
-        <img src="../img/cheetos.png">
-       </div>
+            <div class="sprites">
+                <img src="../img/cheetos.png">
+                <p id="cheetos"></p>
+            </div>
+        </div>
     </div>
 
-    <div>
+    <div class="block-div">
         <h2 id="butJeu"></h2>
 
         <p id="butJeuP1"></p>
@@ -65,15 +69,15 @@
         <p id="butJeuP3"></p>
     </div>
 
-    <div>
+    <div class="block-div">
         <h2 id="systemePoints"></h2>
 
         <p id="systemePointsP1"></p>
 
         <p id="systemePointsP2"></p>
     </div>
-    
-    <div>
+
+    <div class="block-div">
         <h2 id="mouvement"></h2>
 
         <p id="mouvementP1"></p>
@@ -83,7 +87,7 @@
         <p id="mouvementP3"></p>
     </div>
 
-    <div>
+    <div class="block-div">
         <h2 id="commentGagner"></h2>
 
         <p id="commentGagnerP1"></p>
@@ -91,4 +95,5 @@
 
     <script src="../scripts/translation/translator.js" type="module"></script>
 </body>
+
 </html>

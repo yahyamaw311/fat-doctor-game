@@ -23,6 +23,7 @@ const appHeight = 500
 async function setup(){
     await app.init({width: appWidth, height: appHeight})
     document.body.style.overflowX = "hidden"
+    document.body.style.textAlign =  "center"
     document.body.append(app.canvas)
 }
 
