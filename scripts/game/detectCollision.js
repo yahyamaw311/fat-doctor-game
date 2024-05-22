@@ -19,24 +19,26 @@ export function detectCollision(app, foods, characters){
                 if(character.name == "doctor" && food.name == "cheetos"){
                     // console.log("docteur++")
                     result = "doctor++"
+                    break
                     
                 }
 
                 else if(character.name == "doctor" && food.name == "apple"){
                     // console.log("docteur--")
                     result = "doctor--"
-
+                    break
                 }
 
                 else if(character.name == "patient" && food.name == "apple"){
                     // console.log("patient++")
                     result = "patient++"
-                    
+                    break
                 }
 
                 else if(character.name == "patient" && food.name == "cheetos"){
                     // console.log("patient--")
                     result = "patient--"
+                    break
                 }
             }
         }
