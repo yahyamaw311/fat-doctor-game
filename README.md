@@ -77,3 +77,23 @@ Ces éléments ont étés pris de ces sources respectives
 
 
 # Test de 5 secondes
+Pour le test de 5 secondes, nous avons eu l'occasion de se faire tester par deux personnes, Artur et Olivier. Voici les résultats
+
+## Artur
+Lors des 5 premières secondes, Artur s'est senti submergé de texte et n'a pas pris la peine de lire comme il faut.
+Cette réaction était sûrement causé par le stress qu'on lui a donné lors du test; on a chronométré le 5 secondes pour lancer la page et la quitter tout de suite après le 5 secondes donc 
+ça lui a mis une pression. Ce qu'on aurait dû faire, c'était de le laisser prendre sont temps et de lui demander ce qu'il a remarqué lors des 5 premières secondes pour enlever le facteur de stress.
+
+## Olivier
+Pour olivier, on lui a laissé regarder pendant les 5 premières secondes sans le facteur de stress. Après avoir observé, il nous a dit que la page d'accueil était facile a comprendre mais que ce n'était pas assez
+bien développé pour lui. Selon lui, ce serait mieux d'afficher les règles en tout temps sur l'écran. 
+
+
+
+
+
+
+
+
+
+
