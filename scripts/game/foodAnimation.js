@@ -1,6 +1,4 @@
-export function animateFood(app, foods, time){
-    const delta = time.deltaTime
-
+export function animateFood(app, foods){
     const stagePadding = 100
     const boundHeight = app.screen.height + stagePadding * 2
 

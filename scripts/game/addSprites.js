@@ -43,3 +43,31 @@ export function addCharacters(app, characters){
         characters.push(character)
     }
 }
+
+export function addPointMessages(app, pointMessages){
+    const pointInformations = {
+        doctor: {
+            text: "docteur = ",
+            xPlace: 120,
+            yPlace: 25
+        },
+        patient: {
+            text: "patient = ",
+            xPlace: 875,
+            yPlace: 25
+        }
+    }
+
+    for(var character in pointInformations){
+        const pointMessage = new PIXI.Text('', { fontFamily: 'Apple Chancery, cursive', fontSize: 40, fill: 'brown'})
+        pointMessage.text = pointInformations[character].text + 0
+        pointMessage.anchor.set(0.5)
+        pointMessage.x = pointInformations[character].xPlace
+        pointMessage.y = pointInformations[character].yPlace
+        
+        app.stage.addChild(pointMessage)
+        pointMessages.push(pointMessage)
+
+        // [0] = docteur, [1] = patient
+    }
+}

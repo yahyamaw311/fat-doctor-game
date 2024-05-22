@@ -29,15 +29,3 @@ function translateWebsite(languageChosen){
         }
     }
 }
-
-
-// maybe add an extra layer for each page for example
-// french: {
-//     mainPage: {
-
-//     },
-//     rulesPage: {
-
-//     }
-// }
-// ACTUALLY I NEED TO DO IT
