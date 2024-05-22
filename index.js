@@ -3,7 +3,6 @@ import { addBackground } from "./script/addBackground.js";
 import { Controller } from "./script/controller.js";
 import detectCollision from "./script/detectCollision.js";
 
-
 const Application = PIXI.Application;
 const app = new Application();
 const controller = new Controller();
@@ -11,6 +10,7 @@ const controller = new Controller();
 const foods = [];
 const characters = [];
 const messagesTest = [];
+let controllerIndex = null;
 
 let appWidth = 1000
 let appHeight = 500
@@ -37,6 +37,41 @@ async function preload() {
 
 }
 
+window.addEventListener("gamepadconnected", (event) => {
+    const gamepad = event.gamepad;
+    controllerIndex = gamepad.index;
+    console.log("connected");
+});
+
+window.addEventListener("gamepaddisconnected", (event) => {
+    controllerIndex = null;
+    console.log("disconnected");
+});
+
+function handleStick1() {
+    if (controllerIndex != null) {
+        const gamepad = navigator.getGamepads()[controllerIndex];
+        if (gamepad.axes[0].toFixed(2) > 0.5 && characters[0].x < (appWidth - 50)) {
+            characters[0].x += 5
+        }
+        else if (gamepad.axes[0].toFixed(2) < -0.5 && characters[0].x > 0) {
+            characters[0].x -= 5
+        }
+    }
+}
+
+function handleStick2() {
+    if (controllerIndex != null) {
+        const gamepad = navigator.getGamepads()[controllerIndex];
+        if (gamepad.axes[2].toFixed(2) > 0.5 && characters[1].x < (appWidth - 50)) {
+            characters[1].x += 5
+        }
+        else if (gamepad.axes[2].toFixed(2) < -0.5 && characters[1].x > 0) {
+            characters[1].x -= 5
+        }
+    }
+}
+
 (async () => {
     await setup();
     await preload();
@@ -51,14 +86,18 @@ async function preload() {
     let patientPoints = 0;
 
     app.ticker.add((time) => {
+
+        handleStick1();
+        handleStick2();
+
         animateApples(app, foods, time);
-        if (controller.keys.left.pressed && characters[0].x > 0) characters[0].x -= 5;
-        else if (controller.keys.right.pressed && characters[0].x < (appWidth - 50)) characters[0].x += 5;
+        // if (controller.keys.left.pressed && characters[0].x > 0) characters[0].x -= 5;
+        // if (controller.keys.right.pressed && characters[0].x < (appWidth - 50)) characters[0].x += 5;
 
 
-        if (controller.keys.left2.pressed && characters[1].x > 0) characters[1].x -= 5;
-        else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 5;
-        
+        // if (controller.keys.left2.pressed && characters[1].x > 0) characters[1].x -= 5;
+        // else if (controller.keys.right2.pressed && characters[1].x < (appWidth - 50)) characters[1].x += 5;
+
         var winner = detectCollision(foods, characters, app, messagesTest)
 
         if (winner == "jordyn") {
@@ -68,10 +107,10 @@ async function preload() {
             }
         } else if (winner == "wizard") {
             doctorPoints++;
-            if(patientPoints > 0){
+            if (patientPoints > 0) {
                 patientPoints--;
             }
-            
+
         } else if (winner == "wizardLoses" && doctorPoints > 0) {
             doctorPoints--;
         } else if (winner == "jordynLoses" && patientPoints > 0) {

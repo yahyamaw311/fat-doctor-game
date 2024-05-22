@@ -1,4 +1,3 @@
-
 const langChoices = document.querySelector(".langChoices")
 const languagelist = document.querySelectorAll('a')
 
@@ -21,12 +20,12 @@ languagelist.forEach(lang => {
     })
 })
 
-function translateWebsite(languageChosen){
-    for(var element in dictionnary[languageChosen]){
+function translateWebsite(languageChosen) {
+    for (var element in dictionnary[languageChosen]) {
         // cette partie fait pas de sens, si jitere dans le dictionnaire c sur quil est la
         // il faut verifier que document.getEle.. != null
         // if(dictionnary[languageChosen].hasOwnProperty(element)){
-            document.getElementById(element).textContent = dictionnary[languageChosen][element]
+        document.getElementById(element).textContent = dictionnary[languageChosen][element]
         // }
     }
 }
@@ -49,7 +48,7 @@ const dictionnary = {
         title: "Docteur vs Patient",
         jouer: "Jouer",
         regles: "Règles",
-        
+
         // rules page
         retour: "retour",
         reglesDuJeu: "Règles du jeu",
@@ -81,7 +80,7 @@ const dictionnary = {
         title: "Doctor vs Patient",
         jouer: "Play",
         regles: "Rules",
-        
+
         // rules page
         retour: "back",
         reglesDuJeu: "Game Rules",
@@ -113,7 +112,7 @@ const dictionnary = {
         title: "Doctor vs Paciente",
         jouer: "Jugar",
         regles: "Reglas",
-        
+
         // rules page
         retour: "volver",
         reglesDuJeu: "Reglas del juego",
