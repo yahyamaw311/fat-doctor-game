@@ -24,8 +24,6 @@ languagelist.forEach(lang => {
 
 function translateWebsite(languageChosen){
     for(var element in dictionnary[languageChosen]){
-        // cette partie fait pas de sens, si jitere dans le dictionnaire c sur quil est la
-        // il faut verifier que document.getEle.. != null
         if(document.getElementById(element) != null){
             document.getElementById(element).textContent = dictionnary[languageChosen][element]
         }
