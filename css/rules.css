@@ -52,6 +52,8 @@ h2 {
     text-decoration: none;
 }
 
-.active {
-    background-color: #f8f8f8;
+.rules-div .active {
+    background-color: white;
+    color: #45a049;
+    border: #45a049 solid;
 }

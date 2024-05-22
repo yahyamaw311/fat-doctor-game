@@ -3,6 +3,7 @@ body {
     background-color: #f8f8f8;
     justify-content: center;
 }
+
 .menu {
     text-align: center;
     border: 2px solid #4CAF50;
@@ -10,12 +11,15 @@ body {
     padding: 50px 150px;
     background-color: #fff;
     width: fit-content;
+    min-width: 25%;
     margin: 10% auto auto auto;
 }
+
 .title {
     font-size: 36px;
     margin-bottom: 30px;
 }
+
 .button {
     padding: 10px 20px;
     margin-bottom: 10px;
@@ -24,9 +28,6 @@ body {
     display: block;
     border-radius: 5px;
     text-decoration: none;
-}
-.button:hover {
-    background-color: #45a049;
 }
 
 .top-div {
@@ -44,4 +45,14 @@ body {
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+.bottom-div .active {
+    background-color: white;
+    color: #45a049;
+    border: #45a049 solid;
 }
