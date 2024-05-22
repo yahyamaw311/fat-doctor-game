@@ -22,24 +22,10 @@ languagelist.forEach(lang => {
     })
 })
 
-function translateWebsite(languageChosen) {
-    for (var element in dictionnary[languageChosen]) {
-        // cette partie fait pas de sens, si jitere dans le dictionnaire c sur quil est la
-        // il faut verifier que document.getEle.. != null
-        if(dictionnary[languageChosen].hasOwnProperty(element)){
+function translateWebsite(languageChosen){
+    for(var element in dictionnary[languageChosen]){
+        if(document.getElementById(element) != null){
             document.getElementById(element).textContent = dictionnary[languageChosen][element]
         }
     }
 }
-
-
-// maybe add an extra layer for each page for example
-// french: {
-//     mainPage: {
-
-//     },
-//     rulesPage: {
-
-//     }
-// }
-// ACTUALLY I NEED TO DO IT
