@@ -8,7 +8,7 @@ Dans cette image, les cercles rouges représentent les pommes et les carrés ora
 
 On a donc pris ce design et on est directement parti le créer sur HTML, car on était content du résultat. <br>
 
-## rendu final
+## Rendu final
 Voici le rendu final du jeu: <br> <br>
 ![image](https://github.com/yahyamaw311/fat-doctor-game/assets/98132883/aa411696-1053-44e1-8985-f1e999f8b748)
 
