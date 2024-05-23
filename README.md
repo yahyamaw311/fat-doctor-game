@@ -88,11 +88,39 @@ Cette réaction était sûrement causé par le stress qu'on lui a donné lors du
 Pour olivier, on lui a laissé regarder pendant les 5 premières secondes sans le facteur de stress. Après avoir observé, il nous a dit que la page d'accueil était facile a comprendre mais que ce n'était pas assez
 bien développé pour lui. Selon lui, ce serait mieux d'afficher les règles en tout temps sur l'écran. 
 
+# Rapport d'essai
+Pour les tests, nous avons soumis au testeurs plusieurs tâches pour vérifier la compréhension globale du site et du jeu. Voici notre tableau de tâches:
 
+|                     | Objectif                | Scenario                                                | Etat final                     | fonctionnalité                         |
+|---------------------|-------------------------|---------------------------------------------------------|--------------------------------|----------------------------------------|
+|          1          | afficher les règles     | lire le message à l'écran et cliquer sur Non            | la page des règles s'affichera | s'assurer de la connaissance des règles|
+|          2          | changer la langue       | cliquer sur les boutons de changement de langue         | la langue change               | changement de langue                   |
+|          3          | bouger le joueur        | cliquer sur la flèche droite / flèche gauche / joystick | le joueur bouge                | le mouvement du joueur                 |
+|          4          | gagner 5 points         | bouger le joueur et manger les aliments respectifs      | le joueur a 5 points           | le calcul des points                   |
 
+## Résultats
+voici les résultats pour les deux testeurs
 
+### Artur
+Voici les résultats pour les test de Artur:
+|       Tâche             | Réponse                                    | Commentaire                                                                   | Note           |
+|-------------------------|--------------------------------------------|-------------------------------------------------------------------------------|----------------|
+| afficher les règles     | Ce n'était pas difficile                   | Il  a suggéré de changer la question pour simplifier la compréhension         |  ⭐⭐⭐★★   |
+| changer la langue       | Le bouton de langue est facile a remarquer | Il a suggéré d'ajouter des drapeaux                                           |  ⭐⭐⭐⭐★  |
+| bouger le joueur        | c'était simple après avoir lu le règlement | Aucun commentaire                                                             |  ⭐⭐⭐⭐⭐ |
+| gagner 5 points         | Le système de pointage est bon             | Il a trouvé que le pointage était un peu "Hardcore" mais trouve que c'est bon |  ⭐⭐⭐⭐★  |
 
+### Olivier
+Voici les résultats pour les test de Olivier:
+|       Tâche             | Réponse                                       | Commentaire                                                                       | Note         |
+|-------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------|--------------|
+| afficher les règles     | Facile a comprendre la question et où cliquer | Pense que ce serait une meilleure idée d'afficher les règles constament.          | ⭐⭐⭐★★   |
+| changer la langue       | Facile de changer la langue                   | Il a suggéré de différentier le style de la langue actuelle et les autres langues | ⭐⭐⭐⭐★  |
+| bouger le joueur        | Pas difficile du tout et très intuitif        | Aucun commentaire                                                                 | ⭐⭐⭐⭐⭐ |
+| gagner 5 points         | Trouve ça très difficile                      | Il a détesté et trouve que ce serait une meilleure idée de faire un  minuteur     | ⭐⭐★★★    |
 
+## Conclusion
+En conclusion, nous pouvons voir que le jeu est assez simple à comprendre et à utiliser; cependant, il est clair qu'on doit améliorer des éléments dans le design et dans notre approche vis-à-vis de l'UX (user experience) tel qu'un décompte avant le début de la partie, des drapeaux pour représenter les pays pour un meilleur visuel ainsi qu'un meilleur design en général.
 
 
 
