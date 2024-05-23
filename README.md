@@ -17,11 +17,11 @@ Voici le rendu final du jeu: <br> <br>
 ## Glossaire
 - PixiJs
 - Javascript
-- html
-- css
+- Html
+- CSS
 - Chromecast
-- sprite
-- library
+- Sprite
+- Library
 
 ## principe de base
 Pour la création de ce jeu, nous avons créé un site web qui est relié à un script JavaScript. Le script de ce jeu est basé sur le library (bibliothèque) Pixijs. Il est utilisé pour la création des sprites, le mouvement des objets et la création du jeu en général.
@@ -57,12 +57,12 @@ Lors de la création du jeu, nous avons pris de nombreux éléments d'internet. 
 
 ### Images
 1. Background
-   - nous l'avons pris de google image.
-2. les sprites
-   - les sprites ont été pris de [Scratch](https://scratch.mit.edu/projects/editor/?tutorial=getStarted) dans la section des sprites.
+   - Pris de google image.
+2. Sprites
+   - Pris de [Scratch](https://scratch.mit.edu/projects/editor/?tutorial=getStarted) dans la section des sprites.
 
 ### Code
-tous ces éléments ont été pris du site officiel de PIXI JS dans la catégorie tutoriel.
+Tous ces éléments ont été pris du site officiel de PIXI JS dans la catégorie tutoriel.
 1. Générer plusieurs sprites
    - [Fish Bond](https://pixijs.com/8.x/tutorials/fish-pond#1)
 2. Le mouvement des joueurs
