@@ -7,7 +7,6 @@ window.onload = () => {
     var storedLang = localStorage.getItem("language")
     if (storedLang != null) {
         translateWebsite(storedLang)
-        langChoices.querySelector('[language="french"').classList.remove('active')
         langChoices.querySelector('[language=' + storedLang + ']').classList.add('active')
     } else {
         localStorage.setItem("language", "french")
