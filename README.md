@@ -1,5 +1,5 @@
-# fat-doctor-game
-the fat doctor and the client game
+# Doctor vs Patient
+Avoid your poison !
 
 # Maquettes
 Au début, on a voulu créer une simple représentation du jeu pour avoir une idée globale du design, on est donc parti sur Paint pour créer un petit dessin du jeu. Voici le résultat: <br> <br>
@@ -35,13 +35,13 @@ Dans ce site, il est possible de:
 Si aucun des joueurs ne touche aux contrôles, les pommes et les chips vont continuer de tomber, mais seulement aléatoirement. Cela veut dire que l'accumulation des points va aussi se faire aléatoirement. Si le docteur touche une pomme qui tombe, le nombre de points du docteur (score affiché en haut) baissera de 1. S'il touche un chips, son score montera de 1 et celui de son adversaire (fat) baissera de 1. Pour le fat, s'il touche un chips qui tombe, son score baissera de 1. S'il touche une pomme, son score montera de 1 et celui de son adversaire (fat) baissera de 1.
 
 ## Liste des contrôles
-<ins>Docteur</ins><br />
+#### <ins>Docteur</ins><br />
 "A" pour se déplacer horizontalement à gauche
 "D" pour se déplacer horizontalement à droite<br />
 ou <br />
 Joystick de gauche sur la manette <br />
 
-<ins>Patient</ins><br />
+#### <ins>Patient</ins><br />
 Flèche gauche sur le clavier pour se déplacer horizontalement à gauche
 Flèche droite sur le clavier pour se déplacer horizontalement à droite<br />
 ou <br />
@@ -91,12 +91,12 @@ bien développé pour lui. Selon lui, ce serait mieux d'afficher les règles en 
 # Rapport d'essai
 Pour les tests, nous avons soumis aux testeurs plusieurs tâches pour vérifier la compréhension globale du site et du jeu. Voici notre tableau de tâches:
 
-|                     | Objectif                | Scenario                                                | État final                     | fonctionnalité                         |
+|                     | Objectif                | Scenario                                                | État final                     | Fonctionnalité                         |
 |---------------------|-------------------------|---------------------------------------------------------|--------------------------------|----------------------------------------|
-|          1          | afficher les règles     | lire le message à l'écran et cliquer sur Non            | la page des règles s'affichera | s'assurer de la connaissance des règles|
-|          2          | changer la langue       | cliquer sur les boutons de changement de langue         | la langue change               | changement de langue                   |
-|          3          | bouger le joueur        | cliquer sur la flèche droite / flèche gauche / joystick | le joueur bouge                | le mouvement du joueur                 |
-|          4          | gagner 5 points         | bouger le joueur et manger les aliments respectifs      | le joueur a 5 points           | le calcul des points                   |
+|          1          | Afficher les règles     | Lire le message à l'écran et cliquer sur Non            | La page des règles s'affichera | S'assurer de la connaissance des règles|
+|          2          | Changer la langue       | Cliquer sur les boutons de changement de langue         | La langue change               | Changement de langue                   |
+|          3          | Bouger le joueur        | Cliquer sur la flèche droite / flèche gauche / joystick | Le joueur bouge                | Le mouvement du joueur                 |
+|          4          | Gagner 5 points         | Bouger le joueur et manger les aliments respectifs      | Le joueur a 5 points           | Le calcul des points                   |
 
 ## Résultats
 voici les résultats pour les deux testeurs
