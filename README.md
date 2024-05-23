@@ -1,7 +1,6 @@
-# Doctor vs Patient
-Avoid your poison !
+# Doctor vs Patient - Avoid your poison !
 
-# Maquettes
+## Maquettes
 Au début, on a voulu créer une simple représentation du jeu pour avoir une idée globale du design, on est donc parti sur Paint pour créer un petit dessin du jeu. Voici le résultat: <br> <br>
 ![image](https://github.com/yahyamaw311/fat-doctor-game/assets/98132883/d80b08c3-641e-4359-8112-1c45ceb2f6f1)
 
