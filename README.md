@@ -100,6 +100,7 @@ Pour les tests, nous avons soumis aux testeurs plusieurs tâches pour vérifier 
 |          3          | Bouger le joueur        | Cliquer sur la flèche droite / flèche gauche / joystick | Le joueur bouge                | Le mouvement du joueur                 |
 |          4          | Gagner 5 points         | Bouger le joueur et manger les aliments respectifs      | Le joueur a 5 points           | Le calcul des points                   |
 
+
 ## Résultats
 Voici les résultats pour les deux testeurs
 
