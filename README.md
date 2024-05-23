@@ -22,7 +22,7 @@ Voici le rendu final du jeu: <br> <br>
 - Sprite
 - Library
 
-## principe de base
+## Principe de base
 Pour la création de ce jeu, nous avons créé un site web qui est relié à un script JavaScript. Le script de ce jeu est basé sur le library (bibliothèque) Pixijs. Il est utilisé pour la création des sprites, le mouvement des objets et la création du jeu en général.
 
 ## Actions possibles
@@ -79,13 +79,16 @@ Ces éléments ont été pris de ces sources respectives
 Pour le test de 5 secondes, nous avons eu l'occasion de se faire tester par deux personnes, Artur et Olivier. Voici les résultats.
 
 ## Artur
-Lors des 5 premières secondes, Artur s'est senti submergé de texte et n'a pas pris la peine de lire comme il faut.
+Lors des 5 premières secondes, Artur s'était senti submergé de texte et n'a pas pris la peine de lire comme il faut.
 Cette réaction était sûrement causée par le stress qu'on lui a donné lors du test; on a chronométré les 5 secondes pour lancer la page et la quitter tout de suite après les 5 secondes donc 
-ça lui a mis une pression. Ce qu'on aurait dû faire, c'était de le laisser prendre son temps et de lui demander ce qu'il a remarqué lors des 5 premières secondes pour enlever le facteur de stress.
+ça lui a mis une pression. Ce qu'on aurait dû faire, c'était de le laisser prendre son temps et de lui demander ce qu'il a remarqué lors des 5 premières secondes pour enlever le facteur de stress
+De plus, lorsqu'il est allé sur la page de règlemenent, il y avait beaucoup de texte qui s'était présenté devant lui, ce qui rendait la compréhension du contenu difficile, étant donné qu'on ne mettait pas
+beacoup d'images ni de symboles. Un autre problème était les boutons pour changer les règles, car ils n'étaient pas assez intuitifs. En effet, à première vue, Arthur ne savait pas à quoi servait les boutons
+durant les 5 secondes, et avait donc proposé de rajouter des images de drapeau sur les boutons pour que ça ressorte plus sur les yeux.
 
 ## Olivier
-Pour olivier, on lui a laissé regarder pendant les 5 premières secondes sans le facteur de stress. Après avoir observé, il nous a dit que la page d'accueil était facile à comprendre, mais que ce n'était pas assez
-bien développé pour lui. Selon lui, ce serait mieux d'afficher les règles en tout temps sur l'écran. 
+Pour Olivier, on lui a laissé regarder pendant les 5 premières secondes sans le facteur de stress. Après avoir observé, il nous a dit que la page d'accueil était facile à comprendre, mais que ce n'était pas assez
+bien développé pour lui. Selon lui, ce serait mieux d'afficher les règles en tout temps sur l'écran, mis sur le côté.
 
 # Rapport d'essai
 Pour les tests, nous avons soumis aux testeurs plusieurs tâches pour vérifier la compréhension globale du site et du jeu. Voici notre tableau de tâches:
@@ -98,25 +101,25 @@ Pour les tests, nous avons soumis aux testeurs plusieurs tâches pour vérifier 
 |          4          | Gagner 5 points         | Bouger le joueur et manger les aliments respectifs      | Le joueur a 5 points           | Le calcul des points                   |
 
 ## Résultats
-voici les résultats pour les deux testeurs
+Voici les résultats pour les deux testeurs
 
 ### Artur
-Voici les résultats pour les tests de Artur:
+Voici les résultats pour les tests de Arthur:
 |       Tâche             | Réponse                                    | Commentaire                                                                   | Note           |
 |-------------------------|--------------------------------------------|-------------------------------------------------------------------------------|----------------|
-| afficher les règles     | Ce n'était pas difficile                   | Il  a suggéré de changer la question pour simplifier la compréhension         |  ⭐⭐⭐★★   |
-| changer la langue       | Le bouton de langue est facile à remarquer | Il a suggéré d'ajouter des drapeaux                                           |  ⭐⭐⭐⭐★  |
-| bouger le joueur        | c'était simple après avoir lu le règlement | Aucun commentaire                                                             |  ⭐⭐⭐⭐⭐ |
-| gagner 5 points         | Le système de pointage est bon             | Il a trouvé que le pointage était un peu "Hardcore", mais trouve que c'est bon |  ⭐⭐⭐⭐★  |
+| Afficher les règles     | Ce n'était pas difficile                   | Il a suggéré de changer la question pour simplifier la compréhension         |  ⭐⭐⭐★★   |
+| Changer la langue       | Le bouton de langue est facile à remarquer | Il a suggéré d'ajouter des drapeaux                                           |  ⭐⭐⭐⭐★  |
+| Bouger le joueur        | C'était simple après avoir lu le règlement | Aucun commentaire                                                             |  ⭐⭐⭐⭐⭐ |
+| Gagner 5 points         | Le système de pointage est bon             | Il a trouvé que le pointage était un peu "hardcore", mais trouve que c'est bon |  ⭐⭐⭐⭐★  |
 
 ### Olivier
-Voici les résultats pour les tests de Olivier:
+Voici les résultats pour les tests d'Olivier:
 |       Tâche             | Réponse                                       | Commentaire                                                                       | Note         |
 |-------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------|--------------|
-| afficher les règles     | Facile à comprendre la question et où cliquer | Pense que ce serait une meilleure idée d'afficher les règles constamment.          | ⭐⭐⭐★★   |
-| changer la langue       | Facile de changer la langue                   | Il a suggéré de différentier le style de la langue actuelle et les autres langues | ⭐⭐⭐⭐★  |
-| bouger le joueur        | Pas difficile du tout et très intuitif        | Aucun commentaire                                                                 | ⭐⭐⭐⭐⭐ |
-| gagner 5 points         | Trouve ça très difficile                      | Il a détesté et trouve que ce serait une meilleure idée de faire un  minuteur     | ⭐⭐★★★    |
+| Afficher les règles     | Facile à comprendre la question et où cliquer | Pense que ce serait une meilleure idée d'afficher les règles constamment.          | ⭐⭐⭐★★   |
+| Changer la langue       | Facile de changer la langue                   | Il a suggéré de différentier le style de la langue actuelle et les autres langues | ⭐⭐⭐⭐★  |
+| Bouger le joueur        | Pas difficile du tout et très intuitif        | Aucun commentaire                                                                 | ⭐⭐⭐⭐⭐ |
+| Gagner 5 points         | Trouve ça très difficile                      | Il a détesté et trouvé que ce serait une meilleure idée d'utiliser un mineuteur     | ⭐⭐★★★    |
 
 ## Conclusion
 En conclusion, nous pouvons voir que le jeu est assez simple à comprendre et à utiliser; cependant, il est clair qu'on doit améliorer des éléments dans le design et dans notre approche vis-à-vis de l'UX (user experience) tel qu'un décompte avant le début de la partie, des drapeaux pour représenter les pays pour un meilleur visuel ainsi qu'un meilleur design en général.
